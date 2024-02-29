@@ -48,4 +48,24 @@ main {
     justify-content: center;
     justify-self: center;
 }
+.expensesBig {
+    background-color: #B3E4F3;
+}
+.pay {
 
+    background-color: #92D7ED;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 1rem;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.Ecolumns {
+    display:flex;
+    flex-flow: row nowrap;
+    
+}
+.Ecolumns-numbers > p {
+    background: white;
+    border-style: solid;
+}
