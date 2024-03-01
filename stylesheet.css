@@ -28,6 +28,9 @@ main {
     flex-flow: row wrap;
     position: relative;
 }
+.selectTheCareer{
+    
+}
 .info {
     width: 100%;
     display: block;
