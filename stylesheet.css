@@ -98,7 +98,29 @@ main {
 .greenBar {
     background-color: #71FBA8;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.firstBlock>p {
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.firstBlock {
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+.secondBlock {
+
+}
+
 .Ecolumns{
     display: flex;
     flex-flow: column wrap;
