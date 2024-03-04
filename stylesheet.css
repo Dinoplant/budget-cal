@@ -29,6 +29,9 @@ main {
     position: relative;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10.5vw;
 }
 .selectTheCareer{
 
@@ -61,6 +64,7 @@ main {
 .expensesBig>p {
     display: flex;
     align-content: center;
+    justify-content: center;
 }
 
 .pay {
@@ -70,8 +74,10 @@ main {
     justify-content:space-evenly;
     padding: 1rem;
     align-items: center;
-    flex-flow: column nowrap;
-    
+    flex-flow: row nowrap;
+    padding-top: 5rem;
+    width: 90%;
+    margin-left: 3.5vw;
 }
 .Ecolumns {
     display:flex;
@@ -81,9 +87,28 @@ main {
 .Ecolumns-numbers > p {
     background: white;
     border-style: solid;
+    width: 4vw;
+    height: 1.3vw;
+    border: solid 1px black;
+    margin-top: 0.4rem;
+    text-align: center;
+    font-weight: 500;
 }
 
 .greenBar {
     background-color: #71FBA8;
     width: 100%;
+}
+.Ecolumns{
+    display: flex;
+    flex-flow: column wrap;
+}
+.payTitle{
+    position: absolute;
+    top: 11rem;
+}
+.Ecolumns p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
 }
