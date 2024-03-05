@@ -79,11 +79,18 @@ main {
     width: 90%;
     margin-left: 3.5vw;
 }
-.Ecolumns {
+.income {
     display:flex;
     flex-flow: row nowrap;
+    justify-content: center;
     
 }
+.income > input {
+    display:flex;
+   
+}
+
+
 .Ecolumns-numbers > p {
     background: white;
     border-style: solid;
@@ -121,9 +128,17 @@ main {
 
 }
 
-.Ecolumns{
+.Incomecolumn {
     display: flex;
     flex-flow: column wrap;
+    background-color: #92D7ED;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    align-content: flex-start;
+    padding-top: 5rem;
+    padding: 1rem;
 }
 .payTitle{
     position: absolute;
@@ -134,3 +149,4 @@ main {
     font-weight: 500;
     margin-top: 0.2rem;
 }
+
