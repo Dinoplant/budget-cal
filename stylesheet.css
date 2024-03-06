@@ -111,9 +111,6 @@ main {
     font-size: 30px;
 }
 
-.secondBlock {
-
-}
 
 .Incomecolumn {
     display: flex;
@@ -123,10 +120,21 @@ main {
     margin-right: 20rem;
     font-size: 1.3rem;
     font-weight: 500;
-    align-content: flex-start;
+    /* align-content: flex-start; */
     padding-top: 5rem;
     padding: 1rem;
+    align-items: flex-start;
 }
+
+.Incomecolumn > section {
+    display: flex;
+    justify-content: center;
+}
+
+.Incomecolumn > section > input {
+    justify-content: center;
+}
+
 .payTitle{
     position: absolute;
     top: 11rem;

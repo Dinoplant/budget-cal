@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget Calculator</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="calculator.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -75,8 +75,6 @@
            
             </section>
             <section class="expenses">
-                <p>Monthly Income</p>
-                <input type="text" id="monthlyIncome">
                 <p>Savings</p>
                 <input type="text" id="saving">
                 <p>Student Loan</p>
@@ -114,16 +112,16 @@
         <section class="greenBar">
             <section class="firstBlock">
                 <p>Monthly Budget</p>
-                <p>$10,000</p>
+                <p id="monthBudget">$10,000</p>
             </section>
             <section class="secondBlock">
                 <section class="leftHalfGreen">
                     <p>Monthly Savings</p>
-                    <p>$5,000</p>
+                    <p id="monthSav">$5,000</p>
                 </section>
                 <section class="rightHalfGreen">
                     <p>Monthly Expenses</p>
-                    <p>$5,000</p>
+                    <p id="monthExp">$5,000</p>
                 </section>
             </section>
         </section>
