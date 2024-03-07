@@ -1,4 +1,3 @@
-
 /* Font imports */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* .montserrat-<uniquifier> {
@@ -7,15 +6,17 @@
     font-weight: <weight>;
     font-style: normal;
   } */
-  
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: "Montserrat", sans-serif;
 }
+
 h1 {
     background-color: rgb(127, 230, 230);
     padding: 2rem;
@@ -23,6 +24,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
+
 main {
     display: flex;
     flex-flow: row wrap;
@@ -33,9 +35,9 @@ main {
     width: 80%;
     margin-left: 10.5vw;
 }
-.selectTheCareer{
 
-}
+.selectTheCareer {}
+
 .info {
     width: 100%;
     display: block;
@@ -45,6 +47,7 @@ main {
     justify-content: center;
     justify-self: center;
 }
+
 .info p {
     border: 1px black solid;
     background-color: rgb(128, 213, 213);
@@ -56,29 +59,33 @@ main {
     justify-content: center;
     justify-self: center;
 }
+
 .expensesBig {
     background-color: #B3E4F3;
 }
+
 .pay {
-     display: flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     background-color: #92D7ED;
     margin: 4rem;
     align-items: center;
 }
+
 .income {
-    display:flex;
+    display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    
+
 }
-.income > input {
-    display:flex;
-   
+
+.income>input {
+    display: flex;
+
 }
 
 
-.Ecolumns-numbers > p {
+.Ecolumns-numbers>p {
     background: white;
     border-style: solid;
     width: 4vw;
@@ -111,42 +118,50 @@ main {
     font-size: 30px;
 }
 
-
-.Incomecolumn {
-    display: flex;
-    flex-flow: column wrap;
-    background-color: #92D7ED;
-    margin-left: 20rem;
-    margin-right: 20rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    /* align-content: flex-start; */
-    padding-top: 5rem;
-    padding: 1rem;
-    align-items: flex-start;
-}
-
-.Incomecolumn > section {
+.Incomecolumn>section {
     display: flex;
     justify-content: center;
 }
 
-.Incomecolumn > section > input {
+.Incomecolumn>section>input {
     justify-content: center;
 }
 
-.payTitle{
+.payTitle {
     position: absolute;
     top: 11rem;
 }
-.Ecolumns p{
+
+.Ecolumns p {
     font-size: 1.3rem;
     font-weight: 500;
     margin-top: 0.2rem;
 }
-.expenses {
+
+.desire {
+    display: flex;
+    border: 1px solid red;
+}
+
+.left {
+    width: 50rem;
     background-color: #92D7ED;
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
+    flex-flow: row wrap;
+    border: 1px solid red;
+}
+
+.expenses {
+    width: 50rem;
+    background-color: #92D7ED;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    border: 1px solid red;
+}
+
+.expenses p,
+input {
+    flex-basis: 50%;
 }
