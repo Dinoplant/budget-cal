@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+
+
+      function roundToHundredth(value) {
+        return Number(value.toFixed(2));
+      }
+      
     document.getElementById('annualIncome').addEventListener('change', function (eventData) {
 
 
@@ -22,8 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(fedTax+stTax+socSec+med+retInv);
 
         console.log(monthlyBudget)
-        monthlyBudget = monthlyBudget - (fedTax+stTax+socSec+med+retInv);
-
+        monthlyBudget = roundToHundredth(monthlyBudget - (fedTax+stTax+socSec+med+retInv));
 
 
 
@@ -31,6 +36,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     });
+
+
+    document.getElementById('adds').addEventListener('change', function (eventData) {
+
+
+
+        let taxRet = (document.getElementById('taxRet').value)
+
+        let alimony = (document.getElementById('ali').value)
+
+        let childSup = (document.getElementById('childSup').value)
+
+        let monthGift = (document.getElementById('monthGift').value)
+
+        let other = (document.getElementById('other').value)
+
+// didn't have enoguh time to fix, sry.
+
+
+        let adds = (taxRet+alimony+childSup+monthGift+other)-parseInt(monthBudget.innerText);
+
+console.log(adds)
+
+
+
+    });
+
+
+
+
+
 
 
 });
