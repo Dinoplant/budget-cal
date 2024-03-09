@@ -62,7 +62,6 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #B3E4F3;
-  border: red 1px solid;
   width: 87.4%;
   padding: 2rem;
   margin-top: 3rem;
@@ -149,7 +148,6 @@ font-size: 1.5rem;
 
 .Ecolumns-numbers>p {
     background: rgb(215, 215, 215);
-    border-style: solid;
     width: 4vw;
     height: 1.3vw;
     border: solid 1px rgb(0, 0, 0);
@@ -232,9 +230,13 @@ font-size: 1.5rem;
     background-color: #80d2ee;
     display: flex;
     justify-content: flex-start;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     padding: 1rem;
     border: black 1px solid;
+}
+
+.moreInfo p {
+    text-align: start;
 }
 
 h4{
