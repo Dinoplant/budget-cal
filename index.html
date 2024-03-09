@@ -19,8 +19,19 @@
                 Try now with the collapsible, and select your career with these choices or put your own amount.</p>
         </section>
         <section class="selectTheCareer">
-            <p>Annual Income</p>
-            <input type="number" id="annualIncome">
+            <h3>Select a Career/Annual Pay (Before Tax)</h3>
+            <button class="collapsible">All Available Careers</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ea
+                    quo repudiandae, culpa eum ad rem provident quos officiis. Quia provident quo iste doloribus
+                    possimus harum optio adipisci laborum nesciunt.</p>
+            </div>
+            <section class=" enterField">
+                <p>Annual Income</p>
+                <input type="number" id="annualIncome">
+            </section>
         </section>
         <section class="expensesBig">
             <h2>Fill out your Expenses</h2>
@@ -62,7 +73,7 @@
                         <p>Monthly Gifts†</p>
                         <input type="number" id="monthGift">
                         <p>Other</p>
-                        <input type="number" id="other">
+                        <input type="number" id="otherIn">
                     </section>
 
 
@@ -72,11 +83,11 @@
                             monthly
                             expenses</p>
                         <p>†Money from parties/events.</p>
-                        <p>‡Costs from phone, cable, and internet.</p>
+                        <p>‡Costs from phone, cable, and internet.</p> <!-- fix the css problem -->
                     </section>
 
                 </section>
-                <section class="expenses">
+                <section class="expenses" id="minus">
                     <h4>Expenses</h4>
                     <p>Savings</p>
                     <input type="number" id="saving">
@@ -89,7 +100,7 @@
                     <p>Housing/Insurance</p>
                     <input type="number" id="housing">
                     <p>Food</p>
-                    <input type="number">
+                    <input type="number" id="food">
                     <p>Clothing/Self Care</p>
                     <input type="number" id="clothing">
                     <p>Media‡</p>
@@ -99,9 +110,9 @@
                     <p>Transportation</p>
                     <input type="number" id="transPor">
                     <p>Emergency</p>
-                    <input type="number" id="Emergency">
+                    <input type="number" id="emergency">
                     <p>Other</p>
-                    <input type="number" id="other">
+                    <input type="number" id="otherEx">
                 </section>
             </section>
         </section>
