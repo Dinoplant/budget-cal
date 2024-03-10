@@ -13,7 +13,11 @@
     <header>
         <h1>Budget Calculator</h1>
     </header>
+    <div id="root">
+                
+        </div>
     <main>
+        
         <section class="info">
             <p>This Budget calculator will help you visualize your savings and expenses each month with only two steps.
                 Try now with the collapsible, and select your career with these choices or put your own amount.</p>
@@ -21,12 +25,8 @@
         <section class="selectTheCareer">
             <h3>Select a Career/Annual Pay (Before Tax)</h3>
             <button class="collapsible">All Available Careers</button>
-            <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ea
-                    quo repudiandae, culpa eum ad rem provident quos officiis. Quia provident quo iste doloribus
-                    possimus harum optio adipisci laborum nesciunt.</p>
+            <div id="root">
+                
             </div>
             <section class=" enterField">
                 <p>Annual Income</p>
@@ -70,7 +70,7 @@
                         <input type="number" id="ali">
                         <p>Child Support</p>
                         <input type="number" id="childSup">
-                        <p>Monthly Gifts†</p>
+                        <p>Monthly Gifts<sup>†</sup></p>
                         <input type="number" id="monthGift">
                         <p>Other</p>
                         <input type="number" id="otherIn">
@@ -81,8 +81,8 @@
                         <h3>More information</h3>
                         <p>*A court ordered payment from adomestic partner to help cover the other's
                             monthly expenses</p>
-                        <p>†Money from parties/events.</p> 
-                        <p>‡Costs from phone, cable, and internet.</p>
+                        <p><sup>†</sup>Money from parties/events.</p>
+                        <p><sup>‡</sup>Costs from phone, cable, and internet.</p>
                     </section>
 
                 </section>
@@ -102,7 +102,7 @@
                     <input type="number" id="food">
                     <p>Clothing/Self Care</p>
                     <input type="number" id="clothing">
-                    <p>Media‡</p>
+                    <p>Media<sup>‡</sup></p>
                     <input type="number" id="media">
                     <p>Entertainment</p>
                     <input type="number" id="entertain">
@@ -119,16 +119,16 @@
         <section class="greenBar">
             <section class="firstBlock">
                 <p>Monthly Budget</p>
-                <p id="monthBudget">$10,000</p>
+                <p id="monthBudget">$0</p>
             </section>
             <section class="secondBlock">
                 <section class="leftHalfGreen">
                     <p>Monthly Savings</p>
-                    <p id="monthSav">$5,000</p>
+                    <p id="monthSav">$0</p>
                 </section>
                 <section class="rightHalfGreen">
                     <p>Monthly Expenses</p>
-                    <p id="monthExp">$5,000</p>
+                    <p id="monthExp">$0</p>
                 </section>
             </section>
         </section>
@@ -137,9 +137,16 @@
 
     </main>
     <footer>
-        <h3>Footer</h3>
-        <p>Budget Calculator</p>
-        <p>Angel Delgado Jimenez</p>
+        <section class="footerHolder">
+            <section class="footerHolderLeft">
+                <p>Budget Calculator</p>
+                <p>Angel Delgado Jimenez</p>
+            </section>
+            <section class="footerHolderLeft">
+                <p>Career income infomation by EECU</p>
+                <p>angel.delgado_jimenez23@student.cart.org</p>
+            </section>
+        </section>
     </footer>
 </body>
 

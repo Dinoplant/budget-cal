@@ -44,6 +44,7 @@ main {
     align-items: center;
     justify-content: center;
     justify-self: center;
+    padding: 1rem;
 }
 
 .info p {
@@ -62,17 +63,17 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #B3E4F3;
-  width: 87.4%;
-  padding: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  align-items: center;
+    width: 87.4%;
+    padding: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
 }
 
-.selectTheCareer > h3 {
+.selectTheCareer>h3 {
     text-align: center;
-margin-bottom: 1rem;
-font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .collapsible {
@@ -86,48 +87,51 @@ font-size: 1.5rem;
     outline: none;
     font-size: 15px;
     font-weight: bolder;
-  }
-  
-  .active, .collapsible:hover {
+}
+
+.active,
+.collapsible:hover {
     background-color: #99d8ed;
-  }
-  
-  .collapsible:after {
+}
+
+.collapsible:after {
     content: '\002B';
     color: black;
     font-weight: bolder;
     float: right;
     margin-left: 5px;
-  }
-  
-  .active:after {
+}
+
+.active:after {
     content: "\2212";
-  }
-  
-  .content {
+}
+
+#root {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #BAEEFE;
-  }
+}
 
 .enterField {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 30%;
 }
 
 .enterField input {
     margin-left: 2rem;
-   width: 20px;
+    width: 20px;
 }
 
 .expensesBig {
     background-color: #B3E4F3;
     text-align: center;
     padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .pay {
@@ -165,11 +169,14 @@ font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
+    align-self: center;
+    right: 65px;
 }
 
 .firstBlock>p {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 13rem;
 }
 
 .secondBlock {
@@ -179,12 +186,13 @@ font-size: 1.5rem;
 
 .firstBlock {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 30px;
     width: 100%;
 }
 
-.leftHalfGreen, .rightHalfGreen{
+.leftHalfGreen,
+.rightHalfGreen {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -192,7 +200,8 @@ font-size: 1.5rem;
     font-size: 1.2rem;
 }
 
-.leftHalfGreen > p, .rightHalfGreen > p{
+.leftHalfGreen>p,
+.rightHalfGreen>p {
     margin-left: 5rem;
     margin-right: 5rem;
 }
@@ -212,11 +221,13 @@ font-size: 1.5rem;
     width: 50rem;
 }
 
-.Incomecolumn, .moreInfo{
+.Incomecolumn,
+.moreInfo {
     background-color: #92D7ED;
 }
 
-.expenses, .Incomecolumn {
+.expenses,
+.Incomecolumn {
     width: 50rem;
     background-color: #92D7ED;
     display: flex;
@@ -239,21 +250,192 @@ font-size: 1.5rem;
     text-align: start;
 }
 
-h4{
+h4 {
     width: 100%;
     font-size: 1.2rem;
     padding-bottom: 1rem;
 }
 
-.expenses p, .Incomecolumn p,
+.expenses p,
+.Incomecolumn p,
 input {
-    flex-basis:24%;
+    flex-basis: 24%;
     margin-top: 5px;
-    margin-bottom: 5px;  
-      font-size: 1rem;
+    margin-bottom: 5px;
+    font-size: 1rem;
 }
 
 footer {
     display: flex;
+    height: 6rem;
+    background-color: aquamarine;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
+}
+
+.footerHolder {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footerHolderRight {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footerHolderLeft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6rem;
+}
+
+@media only screen and (max-width:1629px) {
+  
+    .greenBar{
+        width: 101.82rem;
+    }
+
+    .expensesBig{
+        position: relative;
+        width: 98%;
+    }
+    
+    footer {
+        width: 100vw;
+    }
+
+    .Incomecolumn{
+        width: 50rem;
+    }
+
+    .expenses input{
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width:1555px) {
+    footer {
+        width: 100%;
+    }
+
+.greenBar{
+    width: 100%;
+}
+
+    .expensesBig {
+        width: 55.5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desire {
+        flex-direction: column;
+    }
+
+    .selectTheCareer {
+        width: 55.5vw;
+    }
+
+}
+
+@media only screen and (max-width:1480px) {
+
+    .expenses,
+    .Incomecolumn {
+        width: 47rem;
+    }
+
+    .expenses input,
+    .Incomecolumn input {
+        width: 0rem;
+    }
+
+    .moreInfo {
+        width: 47rem;
+    }
+
+.enterField{
+    width: 25rem;
+}
+
+    .enterField input {
+        width: 7rem;
+    }
+
+    .greenBar{
+        width: 100%;
+    }
+
+    .expensesBig{
+        padding: 2.2rem;
+    }
+}
+
+@media only screen and (max-width:1400px) {
+    .expenses, .Incomecolumn, .moreInfo {
+        width: 44rem;
+    }
+}
+
+@media only screen and (max-width:1395px) {
+    .pay {
+        padding: .5rem;
+    }
+    .pay p{
+        font-size: .8rem;
+    }
+}
+
+
+@media only screen and (max-width:1350px) {
+    .expenses, .Incomecolumn, .moreInfo {
+        width: 42.5rem;
+    }
+}
+
+@media only screen and (max-width:1270px) {
+    .expenses, .Incomecolumn, .moreInfo {
+        width: 39.9rem;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .expenses, .Incomecolumn, .moreInfo {
+        width: 37.5rem;
+    }
+
+.Ecolumns-numbers > p {
+    width: 35px;
+    height: 20px;
+}
+
+    .expensesBig p{
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width:1120px) {
+    .expenses, .Incomecolumn, .moreInfo {
+        width: 34.5rem;
+    }
+}
+
+
+@media only screen and (max-width:1050px) {
+    .expenses, .Incomecolumn, .moreInfo {
+        width: 32rem;
+    }
+
+    .pay{
+        width: 70%;
+        margin: 10px;
+        align-self: center;
+        flex-direction: column;
+    }
+
+
 }
