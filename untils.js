@@ -74,7 +74,7 @@ async function init() {
 
 function buildList(jobs) {
     //create an empty string to hold the HTML
-    let html = '';
+    let html = `<option value="custom">---</option>`;
 
     //loop through the array of job objects retrieved from the JSON data
     for (let job of jobs) {
@@ -87,6 +87,7 @@ function buildList(jobs) {
         // for (let key in job) {
         //     html += `<div><strong>${key}</strong>: ${job[key]}</div > `;
         // }
+
 
         //create a div element for the job title
         html += `<div> ${job.occupation}</div>`;
