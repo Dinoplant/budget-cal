@@ -1,47 +1,35 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  }
-
-
 
   function roundToHundredth(value) {
     return Number(value.toFixed(2));
   }
-    document.body.addEventListener("click", function (evt) {
-      console.dir(this);
+  document.body.addEventListener("click", function (evt) {
+    console.dir(this);
+
+    var monthlyBudget = 0;
 
 
-      var monthlyBudget = (document.getElementById('annualIncome').value) / 12
-      let fedTax = monthlyBudget * .12;
-      let stTax = monthlyBudget * .07;
-      let socSec = monthlyBudget * 0.062
-      let med = monthlyBudget * 0.0145
-      let retInv = monthlyBudget * 0.05
-  
-      monthlyBudget = roundToHundredth(monthlyBudget - (fedTax + stTax + socSec + med + retInv));
+    monthlyBudget = (document.getElementById('annualIncome').value) / 12;
 
-  
-      let taxRet = parseFloat(document.getElementById('taxRet').value) || 0;
-      let alimony = parseFloat(document.getElementById('ali').value) || 0;
-      let childSup = parseFloat(document.getElementById('childSup').value) || 0;
-      let monthGift = parseFloat(document.getElementById('monthGift').value) || 0;
-      let otherIn = parseFloat(document.getElementById('otherIn').value) || 0;
+    let fedTax = monthlyBudget * .12;
+    let stTax = monthlyBudget * .07;
+    let socSec = monthlyBudget * 0.062;
+    let stDis = monthlyBudget * 0.01;
+    let med = monthlyBudget * 0.0145;
+    let retInv = monthlyBudget * 0.05;
 
-      var adds = (taxRet + alimony + childSup + monthGift + otherIn) || 0;
+    monthlyBudget = roundToHundredth(monthlyBudget - (fedTax + stTax + socSec + med + retInv + stDis));
+
+
+    let taxRet = parseFloat(document.getElementById('taxRet').value) || 0;
+    let alimony = parseFloat(document.getElementById('ali').value) || 0;
+    let childSup = parseFloat(document.getElementById('childSup').value) || 0;
+    let monthGift = parseFloat(document.getElementById('monthGift').value) || 0;
+    let otherIn = parseFloat(document.getElementById('otherIn').value) || 0;
+
+    var adds = (taxRet + alimony + childSup + monthGift + otherIn) || 0;
     monthSav.innerText = `$` + adds;
 
 
@@ -60,14 +48,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var minus = (saving + stuLoan + medIns + ulities + housing + food + clothing + media + entertain + transPor + emergency + otherEx) || 0;
 
-  monthExp.innerText = `$` + minus;
-  
-     
-   
-      monthBudget.innerText = "$" + (roundToHundredth (adds + monthlyBudget - minus)); 
-      console.log(`add` + adds)
-      console.log(`minus` + minus)
-      console.log(`monthly` + (adds + monthlyBudget - minus))
+    monthExp.innerText = `$` + minus;
+
+
+
+    monthBudget.innerText = "$" + (roundToHundredth(adds + monthlyBudget - minus));
+    console.log(`add` + adds)
+    console.log(`minus` + minus)
+    console.log(`monthly` + (adds + monthlyBudget - minus))
   });
 
 });

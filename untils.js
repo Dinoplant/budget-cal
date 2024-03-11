@@ -49,7 +49,7 @@ utils.getJSON = async function (url) {
 
 async function init() {
     //get the root element of the web page
-    let root = document.querySelector('root');
+    let career = document.getElementById('career');
 
     //create a variable to hold the URL of the JSON data source
     let url = 'https://api-demo.cartwebapp.com/data/2024';
@@ -62,14 +62,14 @@ async function init() {
         //retrieve the JSON data from the server
         occupations = await utils.getJSON(url);
     }
-    //catch any errors and display them in the root element
+    //catch any errors and display them in the income element
     catch(error){
-        root.style.color = 'red';
-        root.textContent = `error: ${error}`;
+        career.style.color = 'red';
+        career.textContent = `error: ${error}`;
     }
 
     //show JSON data on the html page
-    root.innerHTML = buildList(occupations);
+    career.innerHTML = buildList(occupations);
 }
 
 function buildList(jobs) {
@@ -80,7 +80,7 @@ function buildList(jobs) {
     for (let job of jobs) {
 
         //start an HTML section for each job
-        html += '<section>';
+        html += `<option value = "${job.salary}">`;
 
         /* An alternative way of looping through each item in the data, not as useful for this assignment but something to keep in mind for a story? ... */
         //loop through each entry and create a div for each key:value pair
@@ -89,9 +89,9 @@ function buildList(jobs) {
         // }
 
         //create a div element for the job title
-        html += `<div><strong>Occupation</strong>: ${job.occupation}</div>`;
+        html += `<div> ${job.occupation}</div>`;
         //create a div element for the salary and format it as currency
-        html += `<div><strong>Salary</strong>: $${job.salary.toLocaleString('en-US')}</div>`;
+        html += `<div><strong></strong>: $${job.salary.toLocaleString('en-US')}</div>`;
         //close the section
         html += '</section>';
     }

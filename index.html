@@ -7,31 +7,29 @@
     <title>Budget Calculator</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js"></script>
+    <script src="untils.js"></script>
 </head>
 
 <body>
     <header>
         <h1>Budget Calculator</h1>
     </header>
-    <div id="root">
-                
-        </div>
     <main>
-        
+         
         <section class="info">
             <p>This Budget calculator will help you visualize your savings and expenses each month with only two steps.
-                Try now with the collapsible, and select your career with these choices or put your own amount.</p>
+                Copy the income from the dropdown or put your own amount.</p>
         </section>
         <section class="selectTheCareer">
             <h3>Select a Career/Annual Pay (Before Tax)</h3>
-            <button class="collapsible">All Available Careers</button>
-            <div id="root">
-                
-            </div>
+
+            <label for="career">Choose a career</label>
+            <select name="career" id="career"></select>
+        
             <section class=" enterField">
                 <p>Annual Income</p>
                 <input type="number" id="annualIncome">
-            </section>
+            </section> 
         </section>
         <section class="expensesBig">
             <h2>Fill out your Expenses</h2>
@@ -132,22 +130,7 @@
                 </section>
             </section>
         </section>
-
-
-
     </main>
-    <footer>
-        <section class="footerHolder">
-            <section class="footerHolderLeft">
-                <p>Budget Calculator</p>
-                <p>Angel Delgado Jimenez</p>
-            </section>
-            <section class="footerHolderLeft">
-                <p>Career income infomation by EECU</p>
-                <p>angel.delgado_jimenez23@student.cart.org</p>
-            </section>
-        </section>
-    </footer>
 </body>
 
 </html>
